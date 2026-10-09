@@ -1,0 +1,83 @@
+<!--
+  index.html
+  Class homepage for SWE645 Assignment 1 (Poojitha Nasappa).
+  Introduces the student and links to the survey form built for Part 2.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Poojitha Nasappa | SWE645</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <p class="brand">Poojitha <span>Nasappa</span></p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="survey.html">Student Survey</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div>
+      <p class="kicker">SWE 645 — Web Services &amp; Cloud Computing</p>
+      <h1>Learning to build systems that scale on real infrastructure.</h1>
+      <p class="lede">
+        I'm a graduate student in Computer Science at George Mason
+        University, with a background in DevOps and software tutoring. This
+        page is my SWE645 homepage, deployed as a static site and hosted on
+        both Amazon S3 and an EC2 instance.
+      </p>
+      <p>
+        <a class="btn" href="survey.html">Take the student survey</a>
+      </p>
+    </div>
+    <img class="art" src="assets/hero.svg" alt="Illustration of a laptop showing a bar chart, connected by lines to a small network of nodes">
+  </section>
+
+  <section class="card">
+    <div class="about-grid">
+      <div>
+        <h2>About this page</h2>
+        <p>
+          This site was built for Assignment 1 of SWE645. It's a small,
+          hand-built page — no framework, just semantic HTML and a single
+          stylesheet — designed to be simple to deploy to S3 static hosting
+          and to a web server running on EC2.
+        </p>
+      </div>
+      <div>
+        <h2>What's here</h2>
+        <ul>
+          <li>A homepage introducing me and the course (this page)</li>
+          <li>A prospective-student survey form, linked above</li>
+          <li>An error page shown if a route isn't available</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <p class="callout">
+    Looking for the survey? It collects contact details, what visitors liked
+    about campus, how they heard about the university, and a raffle entry —
+    <a href="survey.html">open the Student Survey</a>.
+  </p>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; 2026 Poojitha Nasappa</span>
+    <span>SWE645 — Assignment 1</span>
+  </div>
+</footer>
+
+</body>
+</html>

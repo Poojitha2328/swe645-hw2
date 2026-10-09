@@ -1,0 +1,21 @@
+# Author: Poojitha Nasappa
+# SWE645 Assignment 2 - Deployment that keeps 3 replicas (pods) of the survey website running at all times.
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: swe645-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: swe645
+  template:
+    metadata:
+      labels:
+        app: swe645
+    spec:
+      containers:
+        - name: swe645
+          image: poojitha0716/swe645-hw2:v1
+          ports:
+            - containerPort: 80

@@ -1,0 +1,13 @@
+# Author: Poojitha Nasappa
+# SWE645 Assignment 2 - LoadBalancer Service that exposes the survey website on a public Azure IP address.
+apiVersion: v1
+kind: Service
+metadata:
+  name: swe645-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: swe645
+  ports:
+    - port: 80
+      targetPort: 80
